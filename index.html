@@ -102,6 +102,95 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+
+    //log
+    errorBtns[0].addEventListener('click', () => {
+        console.log("log");
+    });
+
+    //error
+    errorBtns[1].addEventListener('click', () => {
+        console.error("error");
+    });
+
+    //count
+    errorBtns[2].addEventListener('click', () => {
+        console.count('count');
+    });
+
+    //warn
+    errorBtns[3].addEventListener('click', () => {
+        console.warn("warning");
+    });
+
+    //assert
+    errorBtns[4].addEventListener('click', () => {
+        const one = 1;
+        const two = 2;
+        const reason = "1 < 2";
+        console.assert(one > two, {one, two, reason});
+    });
+
+    //clear
+    errorBtns[5].addEventListener('click', () => {
+        console.clear();
+    });
+
+    //dir
+    errorBtns[6].addEventListener('click', () => {
+        console.dir(document);
+    });
+
+    //dirxml
+    errorBtns[7].addEventListener('click', () => {
+        console.dirxml(document);
+    });
+
+    //group
+    errorBtns[8].addEventListener('click', () => {
+        console.group('group');
+    });
+
+    //groupEnd
+    errorBtns[9].addEventListener('click', () => {
+        console.groupEnd('groupend');
+    });
+
+    //table
+    errorBtns[10].addEventListener('click', () => {
+        var students = [
+            {
+                name: 'Bryan',
+                college: 'Revelle',
+            },
+            {
+                name: 'Jack',
+                college: 'Muir',
+            },
+            {
+                name: 'John',
+                college: 'Sixth',
+            }
+        ];
+        console.table(students);
+    });
+
+    //time
+    errorBtns[11].addEventListener('click', () => {
+        console.time();
+    });
+
+    //timeEnd
+    errorBtns[12].addEventListener('click', () => {
+        console.timeEnd();
+    });
+
+    //trace
+    errorBtns[13].addEventListener('click', () => {
+        console.trace();
+    });
+
+
   </script>
 </body>
 
